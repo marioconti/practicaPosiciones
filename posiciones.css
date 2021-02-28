@@ -1,0 +1,43 @@
+.container{
+    width: 80%;
+    height: 600px;
+    /* aquí estamos manipulando ancho con porcentaje y alto con pixeles. Esto se puede */
+    border: 1px dashed  green;
+    position: relative;
+    /*  es importante darle al posición al contenedor para que en la ubicación absolute de otro elemento que este contenido
+    respete la posicion del padre */
+}
+.static{
+    position: static;
+    /* la posicion estatica es la que está por defecto */
+    top: 30px;
+    /* la propiedad top no funciona cuando la position es estatica */
+    border: 2px solid blue;
+}
+.relative{
+    position: relative;
+    width: 350px;
+    /* las dos propiedades siguientes se habilitan con esta posición */
+    left: 60px;
+    top: -30px;
+    background-color: burlywood;
+    border: 2px solid blue
+}
+.fixed{
+    position: fixed;
+    /* EL ELEMENTO FIXED QUEDA ANCLADO EN LA PANTALLA.*/
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    background-color: cadetblue;
+    border: 2px solid brown;
+}
+.absolute{
+    position: absolute;
+    height: auto;
+    width: 300px;
+    top: 250px;
+    right: 0;
+    border: 2px dotted yellowgreen;
+    background-color: grey;
+}
